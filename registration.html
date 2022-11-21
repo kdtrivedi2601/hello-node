@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>WD101-L8</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <form id="form" onsubmit="return submitDetails();">
+        <p class="mb-4">ENTER DETAILS</p>
+        <div>
+            <input type="text" id="name" placeholder="Name" name="name" required />
+        </div>
+        <div>
+            <input type="email" id="email" placeholder="Email" name="email" required />
+        </div>
+        <div>
+            <input type="password" id="password" placeholder="Password" name="password" required />
+        </div>
+        <div>
+            <input type="text" onfocus="(this.type='date')" onfocusout="(this.type='text')" id="dob"
+                placeholder="Date of Birth" name="dob" required />
+        </div>
+        <div>
+            <input type="checkbox" id="terms" name="terms" />
+            <label for="terms">You agree to the terms and conditions?</label>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+
+
+
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Dob</th>
+                    <th> Accepted terms?</th>
+                </tr>
+            </thead>
+            <tbody id="table_tbody">
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>
